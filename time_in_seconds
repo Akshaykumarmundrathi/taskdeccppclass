@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+class time{
+	public:
+	int hour,min,sec;
+	int timeinsec;
+};
+
+int main(){
+	time mytime;
+	cout<<"Enter the time : Hr? ";
+	cin>>mytime.hour;
+	cout<<"\nMinutes? ";
+	cin>>mytime.min;
+	cout<<"\nSeconds? ";
+	cin>>mytime.sec;
+	mytime.timeinsec=mytime.hour*3600+mytime.min*60+mytime.sec;
+	cout<<"Time is : "<<mytime.hour<<":"<<mytime.min<<":"<<mytime.sec<<endl;
+	cout<<endl<<"Time in total seconds is : "<<mytime.timeinsec;
+	return 0;
+}
